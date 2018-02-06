@@ -763,6 +763,7 @@ body {
   clear: both;
   text-align: right;
   padding-top: 1rem;
+  padding-right: 2rem;
 }
 #header-post #share li {
   margin: 0;
@@ -987,23 +988,8 @@ body {
     display: none;
   }
 }
-#sociallinks {
+p#socialinfo {
   display: inline-block;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#sociallinks li {
-  display: inline-block;
-}
-#sociallinks li:after {
-  content: ", ";
-}
-#sociallinks li:last-child:after {
-  content: "";
-}
-#sociallinks li:nth-last-child(2):after {
-  content: " and ";
 }
 .post-list {
   padding: 0;
