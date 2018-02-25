@@ -1,0 +1,15 @@
+#!/bin/bash
+
+declare -a themes=("cactus-dark" "cactus-white" "cactus-light" "cactus-classic")
+
+for theme in "${themes[@]}"
+do
+  echo "Generating $theme"
+  cd $theme
+  hexo clean
+  hexo generate
+  cd ..
+  cp -r source/assets $theme/public/
+done
+
+echo "Done!"
