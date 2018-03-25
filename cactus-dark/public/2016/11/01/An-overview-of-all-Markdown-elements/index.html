@@ -223,6 +223,8 @@ This is an H2
 <hr>
 <blockquote>
 <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+</blockquote>
+<blockquote>
 <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer libero luctus adipiscing.</p>
 </blockquote>
 <hr>
@@ -238,6 +240,8 @@ id sem consectetuer libero luctus adipiscing.
 <hr>
 <blockquote>
 <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+</blockquote>
+<blockquote>
 <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer libero luctus adipiscing.</p>
 </blockquote>
 <hr>
@@ -252,9 +256,13 @@ id sem consectetuer libero luctus adipiscing.
 <hr>
 <blockquote>
 <p>This is the first level of quoting.</p>
+</blockquote>
+<blockquote>
 <blockquote>
 <p>This is nested blockquote.</p>
 </blockquote>
+</blockquote>
+<blockquote>
 <p>Back to the first level.</p>
 </blockquote>
 <hr>
@@ -394,15 +402,15 @@ id sem consectetuer libero luctus adipiscing.
 &lt;/div&gt;
 </code></pre><hr>
 <p>Following sections Fenced Code Blocks and Syntax Highlighting are extensions, you can use the other way to write the code block.</p>
-<h4 id="Fenced-Code-Blocks"><a href="#Fenced-Code-Blocks" class="headerlink" title="Fenced Code Blocks"></a>Fenced Code Blocks</h4><p>Just wrap your code in <figure class="highlight plain"><figcaption><span>``` ```` (as shown below) and you won't need to indent it by four spaces.</span></figcaption><table><tr><td class="code"><pre><div class="line"></div><div class="line">Code:</div><div class="line"></div><div class="line">    Here&apos;s an example:</div></pre></td></tr></table></figure></p>
+<h4 id="Fenced-Code-Blocks"><a href="#Fenced-Code-Blocks" class="headerlink" title="Fenced Code Blocks"></a>Fenced Code Blocks</h4><p>Just wrap your code in <figure class="highlight plain"><figcaption><span>``` ```` (as shown below) and you won't need to indent it by four spaces.</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Code:</span><br><span class="line"></span><br><span class="line">    Here&apos;s an example:</span><br></pre></td></tr></table></figure></p>
 <pre><code>function test() {
   console.log(&quot;notice the blank line before this function?&quot;);
 }
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">Preview:</div><div class="line">***</div><div class="line">Here&apos;s an example:</div></pre></td></tr></table></figure>
-</code></pre><p>function test() {<br>  console.log(“notice the blank line before this function?”);<br>}<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">***</div><div class="line">#### Syntax Highlighting</div><div class="line">In your fenced block, add an optional language identifier and we&apos;ll run it through syntax highlighting ([Support Languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)).</div><div class="line"></div><div class="line">Code:</div><div class="line"></div><div class="line">    ```ruby</div><div class="line">    require &apos;redcarpet&apos;</div><div class="line">    markdown = Redcarpet.new(&quot;Hello World!&quot;)</div><div class="line">    puts markdown.to_html</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Preview:</span><br><span class="line">***</span><br><span class="line">Here&apos;s an example:</span><br></pre></td></tr></table></figure>
+</code></pre><p>function test() {<br>  console.log(“notice the blank line before this function?”);<br>}<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">***</span><br><span class="line">#### Syntax Highlighting</span><br><span class="line">In your fenced block, add an optional language identifier and we&apos;ll run it through syntax highlighting ([Support Languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)).</span><br><span class="line"></span><br><span class="line">Code:</span><br><span class="line"></span><br><span class="line">    ```ruby</span><br><span class="line">    require &apos;redcarpet&apos;</span><br><span class="line">    markdown = Redcarpet.new(&quot;Hello World!&quot;)</span><br><span class="line">    puts markdown.to_html</span><br></pre></td></tr></table></figure></p>
 <p>Preview:</p>
 <hr>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'redcarpet'</span></div><div class="line">markdown = Redcarpet.new(<span class="string">"Hello World!"</span>)</div><div class="line">puts markdown.to_html</div></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">require</span> <span class="string">'redcarpet'</span></span><br><span class="line">markdown = Redcarpet.new(<span class="string">"Hello World!"</span>)</span><br><span class="line">puts markdown.to_html</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h3><p>HTML Tag: <code>&lt;hr /&gt;</code><br>Places <strong>three or more hyphens (-), asterisks (*), or underscores (_)</strong> on a line by themselves. You may use spaces between the hyphens or asterisks.</p>
 <p>Code:</p>
@@ -424,7 +432,7 @@ ___
 <p>It’s an extension.</p>
 <p>Separates column by <strong>pipe (|)</strong> and header by <strong>dashes (-)</strong>, and uses <strong>colon (:)</strong> for alignment.</p>
 <p>The outer <strong>pipes (|)</strong> and alignment are optional. There are <strong>3 delimiters</strong> each cell at least for separating header.</p>
-<p>Code:<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">| Left | Center | Right |</div><div class="line">|:-----|:------:|------:|</div><div class="line">|aaa   |bbb     |ccc    |</div><div class="line">|ddd   |eee     |fff    |</div><div class="line"></div><div class="line"> A | B</div><div class="line">---|---</div><div class="line">123|456</div><div class="line"></div><div class="line">A |B</div><div class="line">--|--</div><div class="line">12|45</div></pre></td></tr></table></figure></p>
+<p>Code:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">| Left | Center | Right |</span><br><span class="line">|:-----|:------:|------:|</span><br><span class="line">|aaa   |bbb     |ccc    |</span><br><span class="line">|ddd   |eee     |fff    |</span><br><span class="line"></span><br><span class="line"> A | B</span><br><span class="line">---|---</span><br><span class="line">123|456</span><br><span class="line"></span><br><span class="line">A |B</span><br><span class="line">--|--</span><br><span class="line">12|45</span><br></pre></td></tr></table></figure></p>
 <p>Preview:</p>
 <hr>
 <table>
@@ -530,7 +538,7 @@ This is [an example][id] reference-style link.
 <p><a href="http://google.com/" rel="external nofollow noopener noreferrer" target="_blank">Google</a></p>
 <hr>
 <h3 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h3><p>HTML Tags: <code>&lt;em&gt;</code>, <code>&lt;strong&gt;</code></p>
-<p>Markdown treats <strong>asterisks (*)</strong> and <strong>underscores (_)</strong> as indicators of emphasis. <strong>One delimiter</strong> will be  <code>&lt;em&gt;</code>; <em>*double delimiters</em> will be <code>&lt;strong&gt;</code>.</p>
+<p>Markdown treats <strong>asterisks (*)</strong> and <strong>underscores (_)</strong> as indicators of emphasis. <strong>One delimiter</strong> will be  <code>&lt;em&gt;</code>; *<em>double delimiters</em> will be <code>&lt;strong&gt;</code>.</p>
 <p>Code:</p>
 <pre><code>*single asterisks*
 
@@ -576,8 +584,8 @@ __double underscores__
 A backtick-delimited string in a code span: `` `foo` ``
 </code></pre><p>Preview:</p>
 <hr>
-<p>A single backtick in a code span: <code>` </code></p>
-<p>A backtick-delimited string in a code span: <code>`foo` </code></p>
+<p>A single backtick in a code span: <code>`</code></p>
+<p>A backtick-delimited string in a code span: <code>`foo`</code></p>
 <hr>
 <h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><p>HTML Tag: <code>&lt;img /&gt;</code></p>
 <p>Markdown uses an image syntax that is intended to resemble the syntax for links, allowing for two styles: inline and reference.</p>
@@ -609,7 +617,7 @@ A backtick-delimited string in a code span: `` `foo` ``
 <h3 id="Strikethrough"><a href="#Strikethrough" class="headerlink" title="Strikethrough"></a>Strikethrough</h3><p>HTML Tag: <code>&lt;del&gt;</code></p>
 <p>It’s an extension.</p>
 <p>GFM adds syntax to strikethrough text.</p>
-<p>Code:<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">~~Mistaken text.~~</div></pre></td></tr></table></figure></p>
+<p>Code:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~~Mistaken text.~~</span><br></pre></td></tr></table></figure></p>
 <p>Preview:</p>
 <hr>
 <p><del>Mistaken text.</del></p>
@@ -622,10 +630,10 @@ A backtick-delimited string in a code span: `` `foo` ``
 </code></pre><p>Preview:</p>
 <hr>
 <p><a href="http://example.com/" rel="external nofollow noopener noreferrer" target="_blank">http://example.com/</a></p>
-<p><a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#58;&#x61;&#100;&#100;&#114;&#x65;&#115;&#x73;&#x40;&#x65;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#109;">&#x61;&#100;&#100;&#114;&#x65;&#115;&#x73;&#x40;&#x65;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#109;</a></p>
+<p><a href="mailto:&#97;&#100;&#x64;&#114;&#x65;&#x73;&#x73;&#64;&#101;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#111;&#109;" target="_blank" rel="noopener">&#97;&#100;&#x64;&#114;&#x65;&#x73;&#x73;&#64;&#101;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#111;&#109;</a></p>
 <hr>
 <p>GFM will autolink standard URLs.</p>
-<p>Code:<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">https://github.com/emn178/markdown</div></pre></td></tr></table></figure></p>
+<p>Code:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https://github.com/emn178/markdown</span><br></pre></td></tr></table></figure></p>
 <p>Preview:</p>
 <hr>
 <p><a href="https://github.com/emn178/markdown" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/emn178/markdown</a></p>

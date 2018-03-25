@@ -1234,9 +1234,9 @@ article .content .caption {
 @media (min-width: 39rem) {
   #footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     align-content: center;
     margin-bottom: 20px;
   }

@@ -1234,9 +1234,9 @@ article .content .caption {
 @media (min-width: 39rem) {
   #footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     align-content: center;
     margin-bottom: 20px;
   }
@@ -1318,67 +1318,63 @@ article .content .caption {
   color: #383838;
 }
 .highlight {
-  background: #474949;
-  color: #d1d9e1;
+  color: #585260;
+  background: #efecf4;
 }
 .highlight .code .comment,
 .highlight .code .quote {
-  color: #969896;
-  font-style: italic;
-}
-.highlight .code .keyword,
-.highlight .code .selector-tag,
-.highlight .code .literal,
-.highlight .code .type,
-.highlight .code .addition {
-  color: #c9c;
-}
-.highlight .code .number,
-.highlight .code .selector-attr,
-.highlight .code .selector-pseudo {
-  color: #f99157;
-}
-.highlight .code .string,
-.highlight .code .doctag,
-.highlight .code .regexp {
-  color: #8abeb7;
-}
-.highlight .code .title,
-.highlight .code .name,
-.highlight .code .section,
-.highlight .code .built_in {
-  color: #b5bd68;
+  color: #655f6d;
 }
 .highlight .code .variable,
 .highlight .code .template-variable,
-.highlight .code .selector-id,
-.highlight .code .class .title {
-  color: #fc6;
-}
-.highlight .code .section,
+.highlight .code .attribute,
+.highlight .code .tag,
 .highlight .code .name,
-.highlight .code .strong {
-  font-weight: bold;
+.highlight .code .regexp,
+.highlight .code .link,
+.highlight .code .selector-id,
+.highlight .code .selector-class {
+  color: #be4678;
 }
-.highlight .code .symbol,
-.highlight .code .bullet,
-.highlight .code .subst,
+.highlight .code .number,
 .highlight .code .meta,
-.highlight .code .link {
-  color: #f99157;
+.highlight .code .built_in,
+.highlight .code .builtin-name,
+.highlight .code .literal,
+.highlight .code .type,
+.highlight .code .params {
+  color: #aa573c;
+}
+.highlight .code .string,
+.highlight .code .symbol,
+.highlight .code .bullet {
+  color: #2a9292;
+}
+.highlight .code .title,
+.highlight .code .section {
+  color: #576ddb;
+}
+.highlight .code .keyword,
+.highlight .code .selector-tag {
+  color: #955ae7;
+}
+.highlight .code .deletion,
+.highlight .code .addition {
+  color: #19171c;
+  display: inline-block;
+  width: 100%;
 }
 .highlight .code .deletion {
-  color: #dc322f;
+  background-color: #be4678;
 }
-.highlight .code .formula {
-  background: #eee8d5;
-}
-.highlight .code .attr,
-.highlight .code .attribute {
-  color: #81a2be;
+.highlight .code .addition {
+  background-color: #2a9292;
 }
 .highlight .code .emphasis {
   font-style: italic;
+}
+.highlight .code .strong {
+  font-weight: bold;
 }
 pre {
   overflow-x: auto;
