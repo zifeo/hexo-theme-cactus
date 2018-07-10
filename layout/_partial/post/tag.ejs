@@ -1,3 +1,9 @@
+<div class="article-tag">
+    <%- wordcount(page.content) %> words
+</div>
+<div class="article-tag">
+    <%- min2read(page.content) %> min.
+</div>
 <% if (page.tags && page.tags.length) { %>
     <div class="article-tag">
         <i class="fas fa-tag"></i>

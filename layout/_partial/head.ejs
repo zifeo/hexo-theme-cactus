@@ -43,6 +43,7 @@
     <% if (theme.direction) { %>
       <%- css('css/rtl') %>
     <% } %>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
     <!-- rss -->
     <% if (theme.rss === '' && config.feed && config.feed.path) { %>
       <% theme.rss = config.feed.path %>
